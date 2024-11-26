@@ -1,0 +1,25 @@
+body {
+    width: 1300px;
+    margin: auto;
+    font-family: 'Karla';
+}
+
+.bold {
+    font-size: xx-large;
+    font-weight: 900;
+    color: lightcoral;
+    margin-left: -1rem;
+    margin-right: auto;
+    line-height: 16px;
+}
+
+ul { 
+    display: flex; 
+    flex-direction: row;
+    li {
+        display: block;
+        list-style: none;
+        padding: 0rem;
+        margin: 1rem;
+    }
+}
