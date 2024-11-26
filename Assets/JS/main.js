@@ -1,4 +1,8 @@
+import { fourposters } from "./Modules/fetch.js";
+
 const ROOT = document.getElementById('root')
+
+
 
 const ul = document.createElement('ul')
 const navItems = ['WALLYWOOD', 'FORSIDE', 'PLAKATER', 'OM OS', 'KONTAKT', 'LOGIN', 'BASKET']
@@ -27,3 +31,5 @@ img.src = 'Assets/image.png'
 img.width = 1300
 
 ROOT.appendChild(img)
+
+fourposters();

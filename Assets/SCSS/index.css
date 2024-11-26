@@ -7,7 +7,6 @@ body {
 .bold {
   font-size: xx-large;
   font-weight: 900;
-  font-family: "Karla";
   color: lightcoral;
   margin-left: -1rem;
   margin-right: auto;
@@ -23,4 +22,32 @@ ul li {
   list-style: none;
   padding: 0rem;
   margin: 1rem;
+}
+
+p, h4 {
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: row;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
+.poster {
+  width: 200px;
+  margin: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
 }/*# sourceMappingURL=index.css.map */
