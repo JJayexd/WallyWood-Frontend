@@ -16,6 +16,8 @@ body {
 ul {
   display: flex;
   flex-direction: row;
+  padding: 0rem;
+  margin: 1rem;
 }
 ul li {
   display: block;
@@ -25,13 +27,14 @@ ul li {
 }
 
 p, h4 {
-  padding: 0.2rem;
-  margin: 0.2rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 figure {
   display: flex;
   flex-direction: row;
+  padding: 0rem;
 }
 
 figcaption {
