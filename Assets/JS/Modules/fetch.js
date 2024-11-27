@@ -1,14 +1,19 @@
-const ROOT = document.getElementById('root')
-const grid = document.createElement('div')
-grid.classList.add('grid-container')
+const ROOT = document.getElementById('root');
 
-export const fourposters = async () => {
+export const latest = async () => {
     try {
         const response = await fetch('http://localhost:4000/posters')
 
         if (!response.ok) {
             throw new Error('Status: ' + response.status);
         }
+
+        // OPRETTER DIV TIL DE 4 FIGURES 
+        const grid = document.createElement('div');
+        grid.classList.add('grid-container');
+        
+        ROOT.appendChild(grid);
+        //
 
         const data = await response.json();
 
@@ -19,8 +24,12 @@ export const fourposters = async () => {
                 <img class="poster" src="${poster.image}" alt="${poster.name}"/>
                 <figcaption>
                     <h4>${poster.name}</h4>
-                    <p>${poster.description}</p>
-                    <p>${poster.genre_poster_rel[0].genres.title}</p>
+                    ${poster.description}
+                    <p>Genre: ${poster.genre_poster_rel[0].genres.title}</p>
+                    <div class="buttons">
+                        <button id="readmore">Læs mere</button>
+                        <button id="heart">♡</button>
+                    </div>
                 </figcaption>
             `;
 
@@ -30,7 +39,6 @@ export const fourposters = async () => {
             //     `
             // }
 
-            ROOT.appendChild(grid);
             grid.appendChild(figure);
         });
     } catch (error) {

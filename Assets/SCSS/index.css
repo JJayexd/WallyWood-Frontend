@@ -42,6 +42,19 @@ figcaption {
   flex-direction: column;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+}
+.buttons #readmore {
+  background-color: lightgray;
+  margin-right: 0.5rem;
+}
+.buttons #heart {
+  background-color: lightgray;
+}
+
 .poster {
   width: 200px;
   margin: 8px;
